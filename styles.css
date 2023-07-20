@@ -1,0 +1,209 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0e6d8;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  background-color: #c0905d;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px ;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #c0905d;
+  font-size: 28px;
+}
+a {
+    text-decoration: none;
+    color: #c0905d;
+}
+/* Estilos para las secciones restantes (about-me, contact-info, experience, education, skills, projects, contact-form, etc.) */
+/* Puedes personalizar los colores terrosos para cada sección */
+
+/* Estilos para la sección "Sobre mí" */
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+section > div > img{
+  margin-top: -2vh;
+  height: 19vh;
+  width: 10vw;
+  padding: 1vw;
+}
+
+.bio {
+  flex: 1;
+  margin-top: 4vh;
+}
+
+.bio p {
+  font-size: 16px;
+}
+
+.bio .btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #c0905d;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio .btn:hover {
+  background-color: #a46d40;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el icono de flecha hacia abajo (Font Awesome) */
+.fa-chevron-down {
+  transform: translateY(2px);
+}
+
+/* Estilos para las secciones */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f5ede6;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #c0905d;
+  font-size: 24px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+section > .social-links > ul{
+  list-style: none;
+}
+
+li > a > img{
+  height: 16px;
+}
+
+/* Estilos para la sección de Habilidades */
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  flex: 1 0 150px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  background-color: #c0905d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  list-style: none;
+}
+
+.skills li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animaciones de aparición */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.fade-in.active {
+  opacity: 1;
+}
+
+/* Animaciones adicionales */
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInRotate {
+  0% {
+    opacity: 0;
+    transform: rotate(-10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+
+.fade-in-from-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInFromBottom 1s ease-in-out forwards;
+}
+
+.fade-in-scale {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1s ease-in-out forwards;
+}
+
+.fade-in-rotate {
+  opacity: 0;
+  transform: rotate(-10deg);
+  animation: fadeInRotate 1s ease-in-out forwards;
+}
+
