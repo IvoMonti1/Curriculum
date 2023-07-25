@@ -207,3 +207,10 @@ li > a > img{
   animation: fadeInRotate 1s ease-in-out forwards;
 }
 
+@media screen and (max-width: 1000px) {
+  section > div > img{
+    margin-top: -2vh;
+    width: fit-content;
+    padding: 1vw;
+  }
+}
